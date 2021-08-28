@@ -1,0 +1,44 @@
+@import "./components/Blob.scss";
+@import "./components/Navbar.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.premier {
+  background-color: hsl(351, 74%, 56%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .call {
+    font-size: 3rem;
+    font-weight: bold;
+    color:  white;
+    margin-top: 10rem;
+    margin-left: 7rem;
+  }
+}
+
+.spacer {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &.layer1 {
+    background-image: url('./assets/spacer.svg');
+  }
+}
+
+.deuxieme {
+  background-color: hsl(275, 37%, 18%);
+  width: 100%;
+  height: 400px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.3rem 0.8rem;
+}

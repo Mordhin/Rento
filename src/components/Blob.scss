@@ -1,0 +1,24 @@
+.blob {
+  /* aspect-ratio: 900/900; */
+  width: 16rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/blob.svg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  h1 {
+    font-size: 4rem;
+    color: hsl(275, 37%, 18%);
+  }
+  h2 {
+    font-size: 1.1rem;
+    color: hsl(351, 74%, 56%);
+  }
+}

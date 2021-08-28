@@ -1,0 +1,77 @@
+.navbar {
+  color: #fefefe;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  
+  font-size: 1.5rem;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  ul:first-of-type {
+    margin-right: 2rem;
+  }
+  li {
+    cursor: pointer;
+    margin: 0.3rem 0.8rem;
+  }
+}
+
+.signup {
+  position: relative;
+  border-radius: 10px;
+  border: 2px white solid;
+  transition: all 300ms ease;
+  z-index: 1;
+  padding: 0.3rem 0.8rem;
+}
+
+.signup:hover {
+  color: hsl(351, 74%, 56%);
+  background: hsl(351, 74%, 56%) !important;
+}
+
+.signup::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+.signup:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
