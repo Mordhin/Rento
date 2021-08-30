@@ -1,0 +1,28 @@
+.premier {
+  background-color: hsl(351, 74%, 56%);
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 1rem 5rem 1rem;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(15rem, 30rem));
+  img {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .call {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .premier {
+    grid-template-columns: 1fr;
+    .call {
+      grid-row: 2;
+    }
+  }
+  
+}

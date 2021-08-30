@@ -1,17 +1,12 @@
-import Blob from "./components/Blob";
+import First from "./components/First";
 import Navbar from "./components/Navbar";
+
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="premier">
-        <Blob />
-        <div className="call">
-          <div>Avec Rento, conduisez autrement !</div>
-          <button>J'essaie !</button>
-        </div>
-      </div>
+      <First />
       <div className="spacer layer1"></div>
       <div className="deuxieme"></div>
     </div>

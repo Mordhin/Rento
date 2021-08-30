@@ -1,18 +1,47 @@
 .navbar {
   color: #fefefe;
+  width: 100%;
+  padding: 1rem;
   position: fixed;
   top: 0;
   right: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  background-color: hsl(351, 74%, 56%);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 300ms ease-in;
   
-  font-size: 1.5rem;
+  &.scroll {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 245px;
+  img {
+    width: 4rem;
+    padding: 0.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../assets/blob.svg');
+  }
+}
+
+.menu {
+  display: flex;
   ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     list-style: none;
   }
-  ul:first-of-type {
-    margin-right: 2rem;
+  ul:last-of-type {
+    justify-content: flex-end;
   }
   li {
     cursor: pointer;
@@ -20,37 +49,42 @@
   }
 }
 
-.signup {
+.mini_menu {
   position: relative;
-  border-radius: 10px;
-  border: 2px white solid;
-  transition: all 300ms ease;
-  z-index: 1;
-  padding: 0.3rem 0.8rem;
 }
 
-.signup:hover {
-  color: hsl(351, 74%, 56%);
-  background: hsl(351, 74%, 56%) !important;
-}
-
-.signup::after {
-  content: "";
+.dropdown {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: max-content;
+  display: block;
+  text-align: right;
+  list-style: none;
   background: white;
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 300ms ease-in;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  li {
+    color: hsl(275, 37%, 18%);
+    cursor: pointer;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    transition: color 200ms ease;
+  }
+  li:last-of-type {
+    margin: 2rem 0 0 0;
+  }
+  li:hover {
+    color: hsl(275, 37%, 18%, 80%)
+  }
+  &.disabled {
+    display: none;
+  }
 }
 
-.signup:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.bars {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .link {
@@ -75,3 +109,4 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+
