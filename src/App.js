@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Blob from "./components/Blob";
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="premier">
+        <Blob />
+        <div className="call">
+          <div>Avec Rento, conduisez autrement !</div>
+          <button>J'essaie !</button>
+        </div>
+      </div>
+      <div className="spacer layer1"></div>
+      <div className="deuxieme"></div>
     </div>
   );
 }
