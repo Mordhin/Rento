@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +13,7 @@
   background-color: hsl(351, 74%, 56%);
   border-bottom: 1px solid transparent;
   transition: border-bottom 300ms ease-in;
-  
+
   &.scroll {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
@@ -27,7 +28,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url('../assets/blob.svg');
+    background-image: url("../assets/blob.svg");
   }
 }
 
@@ -74,7 +75,7 @@
     margin: 2rem 0 0 0;
   }
   li:hover {
-    color: hsl(275, 37%, 18%, 80%)
+    color: hsl(275, 37%, 18%, 80%);
   }
   &.disabled {
     display: none;
@@ -108,4 +109,3 @@
   transform: scaleX(1);
   transform-origin: left;
 }
-
