@@ -15,7 +15,9 @@ const Arguments = ({ carousel }) => {
 
   return (
     <div className="arguments">
-      <BsChevronLeft className="left-arrow" onClick={PrevSlide} />
+      <div className="arrows">
+        <BsChevronLeft className="left-arrow" onClick={PrevSlide} />
+      </div>
       {carousel.map((slide, index) => {
         return (
           <div className={index === current ? "slide active" : "slide"}>
@@ -24,6 +26,7 @@ const Arguments = ({ carousel }) => {
                 <img src={slide.image} />
                 <div>
                   <h3>{slide.title}</h3>
+                  <br />
                   <p>{slide.text}</p>
                 </div>
               </>
@@ -31,7 +34,9 @@ const Arguments = ({ carousel }) => {
           </div>
         );
       })}
-      <BsChevronRight className="right-arrow" onClick={NextSlide} />
+      <div className="arrows">
+        <BsChevronRight className="right-arrow" onClick={NextSlide} />
+      </div>
       <ul className="dots">
         {carousel.map((slide, index) => {
           return (
