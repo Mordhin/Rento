@@ -1,0 +1,26 @@
+.pricing {
+  background-color: hsl(275, 37%, 18%);
+  margin: 0 auto;
+  padding: 5rem 1rem;
+
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.pricing-card {
+  height: 40rem;
+  width: 25rem;
+  background: white;
+  margin: 0 1rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .header {
+    height: 25%;
+    background: lightblue;
+  }
+}

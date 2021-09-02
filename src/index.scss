@@ -2,6 +2,7 @@
 @import "./components/CallToAction.scss";
 @import "./components/HowItWorks.scss";
 @import "./components/Arguments.scss";
+@import "./components/Pricing.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap");
 
@@ -57,6 +58,7 @@ h2 {
   padding: 0.3rem 0.8rem;
   background: transparent;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .secondary_btn {
