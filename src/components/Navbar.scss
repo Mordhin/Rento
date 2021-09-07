@@ -1,7 +1,7 @@
 .navbar {
   color: #fefefe;
   width: 100%;
-  padding: 1rem;
+  padding: 0rem 1rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -85,6 +85,7 @@
 .bars {
   font-size: 2rem;
   cursor: pointer;
+  display: flex;
 }
 
 .link {

@@ -1,17 +1,17 @@
 import React from "react";
 import bronze from "../assets/bronze-medal.png";
+import silver from "../assets/silver-medal.png";
+import gold from "../assets/gold-medal.png";
 
 const Pricing = () => {
   return (
     <div className="pricing">
       <div className="cards">
         <div className="pricing-card">
-          <div className="header silver">
-            <div className="badge">
-              <img src={bronze} />
-            </div>
+          <div className="badge">
+            <img src={silver} />
           </div>
-          <h3>Forfait Occasionnel</h3>
+          <h3>Forfait Pro</h3>
           <div className="price">
             <div>300€</div>
             <div>par mois</div>
@@ -24,12 +24,10 @@ const Pricing = () => {
           <button className="bronze">Je m'inscris</button>
         </div>
         <div className="pricing-card">
-          <div className="header gold">
-            <div className="badge">
-              <img src={bronze} />
-            </div>
+          <div className="badge">
+            <img src={gold} />
           </div>
-          <h3>Forfait Occasionnel</h3>
+          <h3>Forfait Premium</h3>
           <div className="price">
             <div>600€</div>
             <div>par mois</div>
@@ -42,12 +40,10 @@ const Pricing = () => {
           <button className="bronze">Je m'inscris</button>
         </div>
         <div className="pricing-card">
-          <div className="header bronze">
-            <div className="badge">
-              <img src={bronze} />
-            </div>
+          <div className="badge">
+            <img src={bronze} />
           </div>
-          <h3>Forfait Occasionnel</h3>
+          <h3>Forfait Casual</h3>
           <div className="price">
             <div>150€</div>
             <div>par mois</div>
