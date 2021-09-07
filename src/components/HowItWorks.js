@@ -13,8 +13,7 @@ const HowItWorks = () => {
           <div className="section">
             <img src={sell} alt="" />
             <p>
-              <span className="emphase">Revendez votre véhicule.</span>
-              <br />
+              <div className="emphase">Revendez votre véhicule.</div>
               Nous le rachetons au prix de l'Argus.
               Réinvestissez ensuite cet argent dans l'une de nos offres de
               location.
@@ -23,16 +22,14 @@ const HowItWorks = () => {
           <div className="section">
             <img src={choice} alt="" />
             <p>
-              <span className="emphase">Sélectionner le véhicule</span>
-              <br />
+              <div className="emphase">Sélectionner le véhicule</div>
               qui vous convient parmi un large choix de sélection.
             </p>
           </div>
           <div className="section">
             <img src={towing} alt="" />
             <p>
-              <span className="emphase">Nous vous amenons votre voiture</span>
-              <br />
+              <div className="emphase">Nous vous amenons votre voiture</div>
               où que vous soyez et quand vous le
               souhaitez. De même pour l'achat initial de votre véhicule.
             </p>
@@ -40,8 +37,7 @@ const HowItWorks = () => {
           <div className="section">
             <img src={car} alt="" />
             <p>
-              <span className="emphase">N'hésitez pas à changer</span>
-              <br />
+              <div className="emphase">N'hésitez pas à changer</div>
               de véhicule selon vos envies via notre application. Choisissez,
               nous nous chargeons du reste !
             </p>
