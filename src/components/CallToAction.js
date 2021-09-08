@@ -18,7 +18,7 @@ const CallToAction = () => {
         <br />
         <button className="primary_btn">J'essaie !</button>
       </div>
-      <img src={call_img} />
+      <img src={call_img} alt="mini"/>
     </div>
   );
 };

@@ -20,10 +20,10 @@ const Arguments = ({ carousel }) => {
       </div>
       {carousel.map((slide, index) => {
         return (
-          <div className={index === current ? "slide active" : "slide"}>
+          <div className={index === current ? "slide active" : "slide"} key={index}>
             {index === current && (
               <>
-                <img src={slide.image} />
+                <img src={slide.image} alt={slide.title}/>
                 <div>
                   <h3>{slide.title}</h3>
                   <br />
@@ -40,7 +40,7 @@ const Arguments = ({ carousel }) => {
       <ul className="dots">
         {carousel.map((slide, index) => {
           return (
-            <li className={index === current ? "dot active" : "dot"}>
+            <li className={index === current ? "dot active" : "dot"} key={index}>
               <GoPrimitiveDot />
             </li>
           );

@@ -3,6 +3,7 @@
 @import "./components/HowItWorks.scss";
 @import "./components/Arguments.scss";
 @import "./components/Pricing.scss";
+@import "./components/Footer.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap");
 
@@ -10,6 +11,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --primary: hsl(351, 74%, 56%);
+  --secondary: hsl(275, 37%, 18%);
+  --secondary-transparent: hsl(275, 37%, 18%, 70%);
+  --secondary-dark: hsl(275, 37%, 8%);
+  --secondary-dark-transparent: hsl(275, 37%, 8%, 70%);
 }
 
 html {
@@ -69,12 +76,12 @@ h2 {
   cursor: pointer;
   text-align: center;
   border: 1px solid currentColor;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .primary_btn:hover {
-  color: hsl(351, 74%, 56%);
-  background: hsl(351, 74%, 56%) !important;
+  color: var(--primary);
+  background: var(--primary) !important;
 }
 
 .primary_btn::after {

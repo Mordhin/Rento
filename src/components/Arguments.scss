@@ -1,5 +1,5 @@
 .arguments {
-  background-color: hsl(275, 37%, 18%);
+  background-color: var(--secondary);
   position: relative;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
     width: 75%;
   }
   div {
-    background-color: hsl(275, 37%, 08%, 70%);
+    background-color: var(--secondary-dark-transparent);
     padding: 1rem;
     border-radius: 10px;
     position: absolute;
@@ -88,7 +88,7 @@
   .dot {
     transition: color 400ms ease-in;
     svg {
-      color: hsl(275, 37%, 08%, 70%);
+      color: var(--secondary-dark-transparent);
     }
   }
 

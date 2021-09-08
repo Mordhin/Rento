@@ -4,7 +4,7 @@ import {GoThreeBars} from 'react-icons/go';
 import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 const Navbar = () => {
-  const {height, width} = useWindowDimensions();
+  const {width} = useWindowDimensions();
   const [scroll, setScroll] = useState(false);
   const [disabled, setDisabled] = useState(true);
 
