@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
-  background-color: hsl(351, 74%, 56%);
+  background-color: var(--primary);
   border-bottom: 1px solid transparent;
   transition: border-bottom 300ms ease-in;
 
@@ -65,7 +65,7 @@
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   li {
-    color: hsl(275, 37%, 18%);
+    color: var(--secondary);
     cursor: pointer;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -75,7 +75,7 @@
     margin: 2rem 0 0 0;
   }
   li:hover {
-    color: hsl(275, 37%, 18%, 80%);
+    color: var(--secondary-transparent);
   }
   &.disabled {
     display: none;
@@ -90,6 +90,8 @@
 
 .link {
   position: relative;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .link::after {

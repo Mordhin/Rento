@@ -9,7 +9,7 @@ const Pricing = () => {
       <div className="cards">
         <div className="pricing-card">
           <div className="badge">
-            <img src={silver} />
+            <img src={silver} alt="silver medal"/>
           </div>
           <h3>Forfait Pro</h3>
           <div className="price">
@@ -25,7 +25,7 @@ const Pricing = () => {
         </div>
         <div className="pricing-card">
           <div className="badge">
-            <img src={gold} />
+            <img src={gold} alt="gold medal"/>
           </div>
           <h3>Forfait Premium</h3>
           <div className="price">
@@ -41,7 +41,7 @@ const Pricing = () => {
         </div>
         <div className="pricing-card">
           <div className="badge">
-            <img src={bronze} />
+            <img src={bronze} alt="bronze medal"/>
           </div>
           <h3>Forfait Casual</h3>
           <div className="price">

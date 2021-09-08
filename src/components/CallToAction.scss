@@ -1,5 +1,5 @@
 .call-to-action {
-  background-color: hsl(351, 74%, 56%);
+  background-color: var(--primary);
   width: 100%;
   margin: 0 auto;
   padding: 10rem 1rem 5rem 1rem;
@@ -15,7 +15,7 @@
   .call {
     margin: 0 auto;
     p {
-      color: rgba(255, 255, 255, 0.8);
+      opacity: .8;
     }
   }
 }
