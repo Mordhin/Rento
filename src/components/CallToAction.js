@@ -11,14 +11,14 @@ const CallToAction = () => {
           Dès aujourd'hui, revendez votre ancienne voiture et passez chez Rento.
         </p>
         <p>
-          Faites-vous plaisir parmi un large choix de véhicule, et changez le
+          Faites-vous plaisir parmi un large choix de véhicules, et changez-en
           quand vous voulez.
         </p>
         <p>C'est simple, Rento se charge de tout !</p>
         <br />
         <button className="primary_btn">J'essaie !</button>
       </div>
-      <img src={call_img} alt="mini"/>
+      <img src={call_img} alt="mini" />
     </div>
   );
 };
